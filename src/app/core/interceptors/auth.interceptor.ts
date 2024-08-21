@@ -3,6 +3,7 @@ import {
   HttpInterceptorFn,
   HttpRequest,
 } from '@angular/common/http';
+
 import { environment } from '@env/environment';
 
 export const authInterceptor: HttpInterceptorFn = (

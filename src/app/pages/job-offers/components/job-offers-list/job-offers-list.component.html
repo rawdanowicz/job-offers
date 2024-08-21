@@ -1,1 +1,8 @@
-<p>job-offers-list works!</p>
+<ul *ngIf="jobOffers$ | async as jobOffers" class="job-offers-list">
+  <li class="job-offers-list__item" *ngFor="let jobOffer of jobOffers">
+    {{ jobOffer.title }}
+    <span class="job-offers-list__location">{{ jobOffer.location }}</span>
+  </li>
+</ul>
+
+<app-job-offers-error></app-job-offers-error>
