@@ -1,0 +1,17 @@
+.job-offers-list {
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0;
+    padding: 8px 12px;
+    border: 1px rgba(128, 128, 128, 0.5) solid;
+    border-radius: 6px;
+    font-weight: 600;
+  }
+
+  &__location {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 14px;
+  }
+}
