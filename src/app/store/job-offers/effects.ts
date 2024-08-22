@@ -12,7 +12,7 @@ import {
 
 @Injectable()
 export class JobOffersEffects {
-  getJobOffers$: Observable<Action>;
+  getJobOffers$: Observable<unknown>;
 
   constructor(
     private actions$: Actions,

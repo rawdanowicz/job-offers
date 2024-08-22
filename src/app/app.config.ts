@@ -11,8 +11,8 @@ import { appEffects, appStore } from '@app/store/store';
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
-    provideRouter(routes),
     provideHttpClient(withInterceptors([authInterceptor])),
+    provideRouter(routes),
     provideStore(appStore),
     provideEffects(appEffects),
   ],
